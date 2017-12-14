@@ -71,7 +71,6 @@ class moodle (
     adminuser      => $adminuser,
     adminpass      => $adminpass,
     adminemail     => $adminemail,
-    require        => [Package['php5-gd'], Package['php5-curl']],
   }
 
 }
