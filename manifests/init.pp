@@ -44,10 +44,6 @@ class moodle (
     ensure => installed,
   }
 
-  package {'php-common':
-    ensure => installed,
-  }
-
   # construct the download URL
   $download_url = "${download_base}/moodle-${moodle_version}.tgz"
 
