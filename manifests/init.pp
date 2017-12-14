@@ -40,11 +40,11 @@ class moodle (
   $adminemail     = $moodle::params::adminemail,
 ) inherits moodle::params {
 
-  package {'php5-gd':
+  package {'php-gd':
     ensure => installed,
   }
 
-  package {'php5-curl':
+  package {'php-common':
     ensure => installed,
   }
 
