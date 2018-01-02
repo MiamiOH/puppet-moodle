@@ -40,10 +40,6 @@ class moodle (
   $adminemail     = $moodle::params::adminemail,
 ) inherits moodle::params {
 
-  package {'php-gd':
-    ensure => installed,
-  }
-
   # construct the download URL
   $download_url = "${download_base}/moodle-${moodle_version}.tgz"
 
