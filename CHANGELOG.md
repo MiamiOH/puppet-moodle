@@ -1,3 +1,6 @@
+## 2020-03-10 - Release 0.1.8
+Move to voxpupuli/puppet-staging
+
 ## 2016-04-07 - Release 0.1.7
 ### Summary
 Fixed error in moodleversion.rb which caused problems when apache was not found on the system.
