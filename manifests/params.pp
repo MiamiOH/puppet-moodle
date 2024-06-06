@@ -9,7 +9,7 @@ class moodle::params {
   $dataroot       = '/opt/moodledata'
   $create_db      = true
   $create_db_user = true
-  $dbtype         = 'mysqli'
+  $dbtype         = 'mariadb'
   $dbhost         = 'localhost'
   $dbname         = 'moodle'
   $dbuser         = 'root'
