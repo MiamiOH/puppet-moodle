@@ -18,7 +18,7 @@ define moodle::db (
   }
   if $create_db_user {
     mysql_user { "${dbuser}@${dbhost}":
-      password_hash => mysql_password($dbpass),
+      password_hash => mysql::password($dbpass),
     }
     mysql_grant { "${dbuser}@${dbhost}/${dbname}.*":
       table      => "${dbname}.*",
