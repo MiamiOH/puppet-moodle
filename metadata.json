@@ -1,53 +1,56 @@
 {
   "name": "alanpetersen-moodle",
-  "version": "0.1.7",
+  "version": "2.0.0",
   "author": "alanpetersen",
   "summary": "Manages the Moodle Learning Management System",
   "license": "Apache-2.0",
   "source": "https://github.com/alanpetersen/puppet-moodle.git",
   "project_page": "https://github.com/alanpetersen/puppet-moodle",
   "issues_url": "https://github.com/alanpetersen/puppet-moodle/issues",
+
   "dependencies": [
-    {"name":"nanliu/staging","version_requirement":">= 1.0.1 < 2.0.0"}
-  ],
-  "requirements": [
     {
-      "name": "pe",
-      "version_requirement": ">= 3.0.0 < 2015.4.0"
+      "name": "puppetlabs/archive",
+      "version_requirement": ">= 6.0.0 < 10.0.0"
     },
     {
-      "name": "puppet",
-      "version_requirement": ">= 3.0.0 < 5.0.0"
+      "name": "puppetlabs/mysql",
+      "version_requirement": ">= 15.0.0 < 20.0.0"
     }
   ],
+
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 7.0.0 < 9.0.0"
+    }
+  ],
+
   "operatingsystem_support": [
     {
       "operatingsystem": "Debian",
-      "operatingsystemrelease": [
-        "6",
-        "7"
-      ]
+      "operatingsystemrelease": ["10", "11", "12"]
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [
-        "12.04",
-        "14.04"
-      ]
+      "operatingsystemrelease": ["20.04", "22.04", "24.04"]
     },
     {
       "operatingsystem": "RedHat",
-      "operatingsystemrelease": [
-        "6",
-        "7"
-      ]
+      "operatingsystemrelease": ["8", "9"]
     },
     {
       "operatingsystem": "CentOS",
-      "operatingsystemrelease": [
-        "6",
-        "7"
-      ]
+      "operatingsystemrelease": ["7", "8"]
     }
+  ],
+
+  "tags": [
+    "moodle",
+    "lms",
+    "education",
+    "archive",
+    "database",
+    "puppet"
   ]
 }
