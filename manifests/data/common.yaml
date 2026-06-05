@@ -1,0 +1,27 @@
+moodle::install_dir: /opt/moodle
+moodle::download_base: https://download.moodle.org/download.php/direct/stable30
+moodle::moodle_version: "3.0.1"
+moodle::default_lang: en
+moodle::www_owner: root
+moodle::www_group: root
+moodle::dataroot: /opt/moodledata
+
+moodle::create_db: true
+moodle::create_db_user: true
+
+moodle::dbtype: mariadb
+moodle::dbhost: localhost
+moodle::dbname: moodle
+moodle::dbuser: root
+moodle::dbpass: ""
+moodle::dbport: 3306
+moodle::dbsocket: ~
+
+moodle::prefix: mdl_
+moodle::fullname: "Moodle Site"
+moodle::shortname: "moodle"
+moodle::summary: "Moodle installation"
+
+moodle::adminuser: admin
+moodle::adminpass: adminpass
+moodle::adminemail: admin@example.com
