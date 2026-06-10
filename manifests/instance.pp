@@ -15,6 +15,8 @@
 # @param dbuser Database username
 # @param dbpass Database password
 # @param dbport Database port
+# @param dbcollate Database collate
+# @param dbcharset Database charset
 # @param dbsocket Database socket (legacy int/string/undef)
 # @param prefix Table prefix
 # @param fullname Full site name
@@ -40,6 +42,8 @@ define moodle::instance (
   String  $dbuser,
   String  $dbpass,
   Integer $dbport,
+  String  $dbcollate,
+  String  $dbcharset,
   Variant[String, Integer, Undef] $dbsocket,
   String  $prefix,
   String  $fullname,
@@ -56,6 +60,8 @@ define moodle::instance (
     dbhost         => $dbhost,
     dbuser         => $dbuser,
     dbpass         => $dbpass,
+    dbcollate      => $dbcollate,
+    dbcharset      => $dbcharset,
   }
 
   moodle::app { $install_dir:

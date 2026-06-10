@@ -6,6 +6,8 @@
 # @param dbhost Database host
 # @param dbuser Database username
 # @param dbpass Database password
+# @param dbcollate Database collate
+# @param dbcharset Database charset
 #
 define moodle::db (
   Boolean $create_db,
@@ -14,12 +16,15 @@ define moodle::db (
   String  $dbhost,
   String  $dbuser,
   String  $dbpass,
+  String  $dbcollate,
+  String  $dbcharset,
 ) {
   ## Set up DB using puppetlabs-mysql defined type
   if $create_db {
     mysql_database { "${dbhost}/${dbname}":
       name    => $dbname,
-      charset => 'utf8',
+      collate => $dbcollate,
+      charset => $dbcharset,
     }
   }
 

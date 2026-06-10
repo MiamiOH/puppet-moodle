@@ -16,6 +16,8 @@ moodle::dbuser: root
 moodle::dbpass: ""
 moodle::dbport: 3306
 moodle::dbsocket: ~
+moodle::dbcharset: utf8
+moodle::dbcollate: utf8_general_ci
 
 moodle::prefix: mdl_
 moodle::fullname: "Moodle Site"
